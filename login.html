@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Σύνδεση | ForestRisk</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; background: #edf3ed; color: #193426; font-family: Arial, sans-serif; }
+    main { width: min(900px, 100%); }
+    header { text-align: center; margin-bottom: 24px; }
+    h1 { margin: 0; color: #174d35; font-size: 34px; }
+    header p { color: #587060; }
+    .layout { display: grid; grid-template-columns: 1.1fr .9fr; gap: 20px; }
+    section, aside { background: #fff; border: 1px solid #d4e1d6; border-radius: 14px; padding: 28px; box-shadow: 0 8px 24px #214b2a14; }
+    h2 { margin-top: 0; color: #174d35; }
+    label { display: block; margin: 16px 0 7px; font-weight: bold; }
+    input { width: 100%; padding: 12px; border: 1px solid #9fb4a2; border-radius: 6px; font: inherit; }
+    button { width: 100%; margin-top: 22px; padding: 12px; border: 0; border-radius: 6px; background: #216047; color: white; font: inherit; font-weight: bold; cursor: pointer; }
+    button:hover { background: #174d35; }
+    .message { min-height: 20px; color: #a52f24; font-size: 14px; }
+    .account { padding: 12px 0; border-top: 1px solid #d4e1d6; }
+    .account strong { color: #174d35; }
+    code { display: block; margin-top: 5px; color: #40584a; font-size: 13px; line-height: 1.65; }
+    @media (max-width: 680px) { .layout { grid-template-columns: 1fr; } section, aside { padding: 22px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><h1>ForestRisk</h1><p>Σύστημα ενημέρωσης και πρόληψης δασικών πυρκαγιών</p></header>
+    <div class="layout">
+      <section>
+        <h2>Σύνδεση</h2>
+        <form action="index.html">
+          <label for="username">Όνομα χρήστη</label>
+          <input id="username" type="text" autocomplete="username" required>
+          <label for="password">Κωδικός πρόσβασης</label>
+          <input id="password" type="password" autocomplete="current-password" required>
+          <button type="submit">Σύνδεση</button>
+        </form>
+        <p class="message">Στατικό πρωτότυπο: η φόρμα δεν ελέγχει τα στοιχεία σύνδεσης.</p>
+      </section>
+      <aside>
+        <h2>Δοκιμαστικοί λογαριασμοί</h2>
+        <div class="account"><strong>Πολίτης</strong><code>citizen / Citizen2026!</code></div>
+        <div class="account"><strong>Πυροσβέστης</strong><code>fireman / Fireman2026!</code></div>
+        <div class="account"><strong>Συγγραφέας</strong><code>author / Author2026!</code></div>
+        <div class="account"><strong>Διαχειριστής</strong><code>admin / Admin2026!</code></div>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
