@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Η φροντίδα του δάσους στην καθημερινότητά μας | Πρόβλεψη δασικών πυρκαγιών</title>
+  <style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f6f1; color: #23382e; font-family: Arial, sans-serif; line-height: 1.6; }
+a { color: #205f43; }
+header { background: #173f2c; color: white; }
+.header-inner, main, footer { max-width: 1120px; margin: auto; padding: 24px; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.brand { color: white; text-decoration: none; font-size: 20px; font-weight: bold; }
+.brand small { display: block; color: #c1d5c7; font-size: 12px; font-weight: normal; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; }
+nav a { color: #e2ece5; padding: 8px 12px; border-radius: 6px; text-decoration: none; font-size: 14px; }
+nav a:hover, nav .current { background: #315c43; color: white; }
+main { min-height: 70vh; padding-top: 40px; }
+h1 { margin: 8px 0; font-size: 34px; line-height: 1.25; }
+h2 { margin: 0 0 12px; font-size: 23px; }
+h3 { margin: 0 0 8px; font-size: 18px; }
+p { margin: 8px 0 16px; }
+.eyebrow { font-size: 12px; font-weight: bold; color: #4a6b56; }
+.lead { max-width: 760px; color: #536459; margin-bottom: 28px; }
+.demo { background: #fff5dc; border: 1px solid #e9d8a6; color: #655027; padding: 12px 16px; border-radius: 8px; margin: 24px 0; font-size: 14px; }
+.panel, .card { background: white; border: 1px solid #dbe3da; border-radius: 10px; padding: 24px; }
+.panel { margin: 20px 0; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 18px 0; }
+.search-row, .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+.search-row { align-items: end; }
+.search-row .field { flex: 1; margin: 0; }
+.field { margin-bottom: 20px; }
+label { display: block; margin-bottom: 6px; font-weight: bold; }
+input, textarea { font: inherit; width: 100%; padding: 11px 12px; color: #23382e; background: white; border: 1px solid #a6b8aa; border-radius: 6px; }
+textarea { min-height: 260px; resize: vertical; }
+.button { display: inline-block; background: #216047; color: white; padding: 11px 18px; border: 1px solid #216047; border-radius: 6px; text-decoration: none; font-weight: bold; }
+.button:hover { background: #174c37; }
+.secondary { background: white; color: #216047; }
+.secondary:hover { background: #edf4ee; }
+:focus-visible { outline: 3px solid #cb8c26; outline-offset: 3px; }
+.meta, .help { color: #627166; font-size: 14px; }
+.help { margin-top: 12px; }
+.tag { display: inline-block; background: #edf3ec; color: #45634c; padding: 3px 10px; border-radius: 20px; font-size: 13px; margin-bottom: 10px; }
+.value { font-size: 42px; font-weight: bold; color: #216047; margin: 10px 0; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 20px 0; }
+.stats strong { display: block; font-size: 28px; color: #216047; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+caption { text-align: left; margin-bottom: 12px; color: #627166; }
+th { background: #edf3ec; text-align: left; }
+th, td { padding: 14px 12px; border-bottom: 1px solid #dbe3da; white-space: nowrap; }
+.article-panel { max-width: 800px; }
+footer { border-top: 1px solid #dbe3da; font-size: 13px; color: #627166; }
+@media (max-width: 700px) {
+  .header-inner, main, footer { padding: 20px; }
+  nav { gap: 2px; }
+  nav a { padding: 8px; font-size: 13px; }
+  h1 { font-size: 28px; }
+  .grid, .stats { grid-template-columns: 1fr; }
+  .search-row { flex-direction: column; align-items: stretch; }
+  .panel, .card { padding: 18px; }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="index.html">Πρόβλεψη δασικών πυρκαγιών<small>ΕΝΗΜΕΡΩΣΗ ΚΑΙ ΠΡΟΛΗΨΗ</small></a>
+      <nav aria-label="Κύρια πλοήγηση">
+        <a href="index.html">Αναζήτηση δάσους</a>
+        <a href="read-article.html" class="current">Blog</a>
+        <a href="write-article.html">Νέο άρθρο</a>
+        <a href="advanced-data.html">Προηγμένα δεδομένα</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="eyebrow">Δημόσιο blog</div>
+    <h1>Η φροντίδα του δάσους στην καθημερινότητά μας</h1>
+    <p class="lead">Ένα ενδεικτικό άρθρο για τη φροντίδα και την προστασία του φυσικού περιβάλλοντος.</p>
+    <p class="demo">Στατικό πρωτότυπο πλοήγησης. Όλα τα στοιχεία είναι ενδεικτικά και δεν αποτελούν πραγματικές προβλέψεις ή δημοσιεύσεις.</p>
+    <article class="panel article-panel" aria-label="Περιεχόμενο άρθρου">
+      <span class="tag">Οικολογία</span>
+      <p class="meta">Συγγραφέας επίδειξης · 6 Νοεμβρίου 2026</p>
+      <p>Η προστασία του δάσους ξεκινά από την προσοχή μας όταν το επισκεπτόμαστε. Παίρνουμε μαζί μας τα απορρίμματά μας και σεβόμαστε τη σήμανση και τους κανόνες της περιοχής.</p>
+      <p>Η ενημέρωση και η υπεύθυνη στάση βοηθούν στη διατήρηση του φυσικού περιβάλλοντος. Το δάσος αποτελεί χώρο ζωής για πολλά είδη φυτών και ζώων.</p>
+      <p>Το blog της εφαρμογής συγκεντρώνει άρθρα για την πρόληψη και για θέματα οικολογίας, διαθέσιμα σε όλους χωρίς σύνδεση.</p>
+    </article>
+    <a href="read-article.html">← Επιστροφή στο blog</a>
+  </main>
+  <footer>Ομαδική εργασία · Ανάπτυξη και Αρχιτεκτονικές Πληροφοριακών Συστημάτων</footer>
+</body>
+</html>
